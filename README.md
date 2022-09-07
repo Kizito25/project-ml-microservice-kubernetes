@@ -1,10 +1,25 @@
-[![kizito25](https://circleci.com/gh/Kizito25/project-ml-microservice-kubernetes/tree/master.svg?style=svg)](https://https://app.circleci.com/pipelines/github/Kizito25/project-ml-microservice-kubernetes)
+[![kizito25](https://circleci.com/gh/Kizito25/project-ml-microservice-kubernetes/tree/main.svg?style=svg)](https://https://app.circleci.com/pipelines/github/Kizito25/project-ml-microservice-kubernetes)
 
 ## Project Overview
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
 
 You are given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). This project tests your ability to operationalize a Python flask app—in a provided file, `app.py`—that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
+
+## Introduction of the project
+
+project-ml-microservice-kubernetes is an Udacity project that configures, builds, lints and tests microservices in a containerized environment. 
+
+## Motivation behind the project
+
+There is a gap between development and deployment in a software development lifecycle. 
+This project aims at testing my knowledge in eliminating these gaps that exist within the software development lifecycle.
+
+## Tech Stack used in the project
+
+Scripts in this project are written in Python and Bash.
+There’s also Minikube for running a Kubernetes cluster, and Docker for containerization.
+
 
 ### Project Tasks
 

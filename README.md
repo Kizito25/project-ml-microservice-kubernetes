@@ -93,12 +93,21 @@ source .devops/bin/activate
 
 2. `sudo install minikube-linux-amd64 /usr/local/bin/minikube`
 
-3. `minikube version` - to confirm if it installed successfully
+3. `minikube version` - * to confirm if it installed successfully * 
 
 4. `minikube start`
 
 ##### Create Flask app in Container
-##### Run via kubectl
+
+* Runing docker from the root directory builds the app in a docker container
+
+1. `./run_docker.sh` - * create a docker image * 
+
+2. `./upload_docker.sh` - * upload to docker repository.  you will need you docker login credentials for this* 
+
+3. `.run_kubernetes.sh` - * Using Kubernetes to run a containerized deployment of our Flask App *
+
+##### Run via kubectl`
 
 * Install Kubectl
 

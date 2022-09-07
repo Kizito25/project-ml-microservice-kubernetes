@@ -1,4 +1,4 @@
-[![kizito25](https://circleci.com/gh/kizito25/project-ml-microservice-kubernetes/tree/main.svg?style=svg)](https://https://app.circleci.com/pipelines/github/kizito25/project-ml-microservice-kubernetes)
+[![kizito25](https://circleci.com/gh/kizito25/project-ml-microservice-kubernetes/tree/master.svg?style=svg)](https://https://app.circleci.com/pipelines/github/Kizito25/project-ml-microservice-kubernetes)
 
 ## Project Overview
 

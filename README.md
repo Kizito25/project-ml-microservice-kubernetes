@@ -59,7 +59,51 @@ source .devops/bin/activate
 
 ### Kubernetes Steps
 
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+##### Setup and Configure Docker locally
+1. `sudo apt install apt-transport-https ca-certificates curl software-properties-common` 
+
+2. `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
+
+3. `sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"`  
+
+4. `sudo apt update -y`
+
+5. `apt-cache policy docker-ce`
+
+6. `sudo apt install docker-ce`
+
+7. `sudo systemctl status docker`
+
+* Grant user permissions to docker executable
+
+8. `sudo usermod -aG docker ${USER}`
+
+9. `su - ${USER}`
+
+10. `id -nG`
+
+* Test docker
+11. `docker ps`
+
+##### Setup and Configure Kubernetes locally
+
+* Minikube for Kubernetes - *For Linux*
+
+1. `curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64`
+
+2. `sudo install minikube-linux-amd64 /usr/local/bin/minikube`
+
+3. `minikube version` - to confirm if it installed successfully
+
+4. `minikube start`
+
+##### Create Flask app in Container
+##### Run via kubectl
+
+* Install Kubectl
+
+1. `curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"` - * download *
+
+2. `sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl` - * install *
+
+3. `kubectl version --client` - * Confirm Installation *
